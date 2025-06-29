@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 📦 Setup Instructions
 
 #### 1. Clone the repo
@@ -7,14 +6,17 @@
 git clone https://github.com/your-org/frontend-app.git
 cd frontend-app
 ```
-
-#### 2. Install dependencies
+#### 2. Create `.env.local` file:
+```bash
+NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+```
+#### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-#### 3. Run the development server
+#### 4. Run the development server
 
 ```bash
 npm run dev
