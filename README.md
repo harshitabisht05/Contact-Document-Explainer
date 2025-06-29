@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 📦 Setup Instructions
 
 #### 1. Clone the repo
@@ -62,3 +63,6 @@ This is the **React/Next.js frontend** for the FastAPI backend that enables user
 1. Login and register page navbar (Ojaswee)
 2. upload page dashbaord (Paridhi)
 3. summary page and api integration (Harshita)
+=======
+# Contact-Document-Explainer
+>>>>>>> 4db5cc4ab53524b113afec05b17ee6b1f7d3593e

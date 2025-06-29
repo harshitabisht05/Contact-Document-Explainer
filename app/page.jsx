@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import FeaturesStacked from './components/FeaturesStacked';
+import Navbar from './components/Navbar';
 
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
 
   return (
     <>
+    <Navbar />
       {/* Hero Section */}
 <div className="relative min-h-screen w-full overflow-hidden">
   {/* Text & Button */}
@@ -22,13 +24,13 @@ export default function HomePage() {
       style={{ fontFamily: 'var(--font-manrope)' }}
       className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.15)] mb-6"
     >
-      Smart. Secure.
+      Summarizer Your Documents
       <br />
-      Structured.
+      In One Go.
     </h1>
 
     <button
-      onClick={() => router.push('#upload')}
+      onClick={() => router.push('/login')}
       style={{ fontFamily: 'var(--font-manrope)' }}
       className="group inline-flex items-center gap-2 px-6 md:px-8 py-2 
         bg-white/10 hover:bg-white/20 text-white 
@@ -49,20 +51,18 @@ export default function HomePage() {
     </p>
   </div>
 
-  {/* Background/Preview Video
-  <div className="relative z-10 w-full mt-16">
+  <div className="flex justify-center items-center mt-10 px-4">
+  <div className="w-full max-w-3xl">
     <video
+      src="/images/demo.mp4"
       autoPlay
       muted
       loop
       playsInline
-      className="w-full h-auto max-h-[600px] object-cover"
-    >
-      <source src="/videos/demo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+      className="w-full h-auto rounded-2xl shadow-lg"
+    />
   </div>
-  */}
+</div>
 </div>
 
 
